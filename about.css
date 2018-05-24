@@ -1,0 +1,27 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.jumbotron {
+  margin: 0 auto;
+  width: 50%;
+  overflow-y: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title {
+  padding-top: 5%;
+}
+
+.center {
+  text-align: center;
+}
