@@ -22,9 +22,13 @@ body {
   text-align: center;
 }
 
-p {
+.col-md p, .col-md-10 p {
   font-family: 'Times New Roman';
   text-align: justify;
   font-size: 120%;
   color: gray;
+}
+
+.footer {
+  background-color: black;
 }
