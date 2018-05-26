@@ -16,18 +16,26 @@ body {
   text-align: center;
 }
 
-.center {
+.row {
+  padding-bottom: 1%;
+}
+
+#center {
   text-align: center;
 }
 
-.col-sm-6, .col-sm {
+.col-sm-6, .col-sm, .col-sm-9, .col-sm-3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-p {
+.col-sm-6 p {
   text-align: justify;
+}
+
+.border-line {
+  border-left: 2px solid black;
 }
 
 #learning, #help, #tools, #images {
