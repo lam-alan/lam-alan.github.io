@@ -20,6 +20,20 @@ body {
   text-align: center;
 }
 
-.container {
-  border: 2px solid green;
+.col-sm-6, .col-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+}
+
+#learning, #help, #tools, #images {
+  margin-bottom: 10%;
+}
+
+.footer {
+  background-color: black;
 }
