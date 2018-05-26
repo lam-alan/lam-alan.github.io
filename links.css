@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  background-image: url('./pictures/network-3357642_1920.jpg');
 }
 
 body {
@@ -10,14 +11,15 @@ body {
   background-color: black;
 }
 
+.container {
+  background-color: black;
+}
+
 .title {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-}
-
-.row {
-  padding-bottom: 1%;
+  color: gray;
 }
 
 #center {
@@ -28,18 +30,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: gray;
 }
 
-.col-sm-6 p {
+.text {
   text-align: justify;
 }
 
 .border-line {
-  border-left: 2px solid black;
+  border-left: 2px solid darkblue;
 }
 
-#learning, #help, #tools, #images {
+#learning, #help, #tools {
   margin-bottom: 10%;
+}
+
+#images {
+  padding-bottom: 2%;
 }
 
 .footer {
