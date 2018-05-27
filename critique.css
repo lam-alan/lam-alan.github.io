@@ -2,11 +2,11 @@ body, html {
   height: 100%;
   background-image: url('./pictures/network-3357642_1920.jpg');
 }
-
+  
 body {
   padding-top: 50px;
 }
-
+  
 .navbar {
   background-color: black;
 }
@@ -18,35 +18,27 @@ body {
 .title {
   padding-top: 5%;
   padding-bottom: 5%;
-  text-align: center;
   color: gray;
-}
-
-.center {
   text-align: center;
 }
 
-.col-sm-6, .col-sm, .col-sm-9, .col-sm-3 {
+.img-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: gray;
 }
 
 .text {
+  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.col-md p {
+  color: gray;
+  font-family: 'Times New Roman';
+  font-size: 120%;
   text-align: justify;
-}
-
-.border-line {
-  border-left: 2px solid darkblue;
-}
-
-#learning, #help, #tools {
-  margin-bottom: 10%;
-}
-
-#images {
-  padding-bottom: 2%;
 }
 
 .footer {
