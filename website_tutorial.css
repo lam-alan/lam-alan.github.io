@@ -2,39 +2,26 @@ body, html {
   height: 100%;
   background-image: url('./pictures/network-3357642_1920.jpg');
 }
-
+    
 body {
   padding-top: 50px;
 }
-
+    
 .navbar {
   background-color: black;
 }
-
+    
 .container {
   background-color: black;
 }
-
+    
 .title {
   padding-top: 5%;
   padding-bottom: 5%;
   color: gray;
   text-align: center;
 }
-
-.col-md p, .col-md-10 p {
-  font-family: 'Times New Roman';
-  text-align: justify;
-  font-size: 120%;
-  color: gray;
-}
-
-#pc {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 100%;
-  color: #212529;
-}
-
+  
 .footer {
   background-color: black;
 }

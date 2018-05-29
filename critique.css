@@ -17,6 +17,11 @@ body {
 
 .title {
   padding-top: 5%;
+  color: gray;
+  text-align: center;
+}
+
+.subtitle {
   padding-bottom: 5%;
   color: gray;
   text-align: center;
