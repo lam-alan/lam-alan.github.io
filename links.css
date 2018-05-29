@@ -38,7 +38,7 @@ body {
 }
 
 .border-line {
-  border-left: 2px solid darkblue;
+  border-left: 2px solid teal;
 }
 
 #learning, #help, #tools {
