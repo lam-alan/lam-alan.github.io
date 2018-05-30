@@ -1,6 +1,5 @@
 body, html {
   height: 100%;
-  background-image: url('./pictures/network-3357642_1920.jpg');
 }
   
 body {
@@ -12,12 +11,11 @@ body {
 }
 
 .container {
-  background-color: black;
+  background-color: white;
 }
 
 .title {
   padding-top: 5%;
-  color: gray;
   text-align: center;
 }
 
@@ -40,12 +38,11 @@ body {
 }
 
 .col-md p {
-  color: gray;
-  font-family: 'Times New Roman';
+  font-family: 'serif';
   font-size: 120%;
   text-align: justify;
 }
 
-.footer {
+.footer .container, .footer {
   background-color: black;
 }

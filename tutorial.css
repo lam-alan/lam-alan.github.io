@@ -1,6 +1,5 @@
 body, html {
   height: 100%;
-  background-image: url('./pictures/network-3357642_1920.jpg');
 }
   
 body {
@@ -12,18 +11,16 @@ body {
 }
 
 .container {
-  background-color: black;
+  background-color: white;
 }
 
 .title {
   padding-top: 5%;
-  color: gray;
   text-align: center;
 }
 
 .subtitle {
   padding-bottom: 5%;
-  color: gray;
   text-align: center;
 }
 
@@ -35,16 +32,21 @@ body {
   margin-bottom: 7%;
 }
 
+a, a:hover {
+  color: black;
+}
+
 .img-fluid {
   margin-top: 2%;
 }
 
 .col-md-10 p {
   margin-top: 2%;
-  color: gray;
   text-align: justify;
+  font-family: 'serif';
+  font-size: 120%;
 }
 
-.footer {
+.footer .container, .footer {
   background-color: black;
 }

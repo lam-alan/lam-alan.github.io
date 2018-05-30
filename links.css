@@ -1,6 +1,5 @@
 body, html {
   height: 100%;
-  background-image: url('./pictures/network-3357642_1920.jpg');
 }
 
 body {
@@ -12,14 +11,13 @@ body {
 }
 
 .container {
-  background-color: black;
+  background-color: white;
 }
 
 .title {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  color: gray;
 }
 
 .center {
@@ -49,6 +47,6 @@ body {
   padding-bottom: 2%;
 }
 
-.footer {
+.footer .container, .footer {
   background-color: black;
 }
