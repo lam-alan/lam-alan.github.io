@@ -1,6 +1,5 @@
 body, html {
   height: 100%;
-  background-image: url('./pictures/network-3357642_1920.jpg');
 }
 
 body {
@@ -8,22 +7,22 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #212529;
 }
 
 .container {
-  background-color: black;
+  background-color: white;
 }
 
 .title {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  color: gray;
 }
 
 .center {
   text-align: center;
+  color: black;
 }
 
 .col-sm-6, .col-sm, .col-sm-9, .col-sm-3 {
@@ -35,6 +34,9 @@ body {
 
 .text {
   text-align: justify;
+  font-family: 'serif';
+  font-size: 120%;
+  color: black;
 }
 
 .border-line {
@@ -49,6 +51,6 @@ body {
   padding-bottom: 2%;
 }
 
-.footer {
+.footer .container, .footer {
   background-color: black;
 }
