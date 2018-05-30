@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #212529;
 }
 
 .container {
@@ -20,16 +20,23 @@ body {
   text-align: center;
 }
 
-.col-md p, .col-md-10 p {
+.col-md-5 p, .col-md-9 p {
   font-family: 'serif';
   text-align: justify;
   font-size: 120%;
 }
 
+.col-md-4 {
+  background-color: rgba(236, 230, 230, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #pc {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 100%;
-  color: #212529;
+  color: gray;
 }
 
 .footer .container, .footer {

@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-  background-color: black;
+  background-color: #212529;
 }
 
 .container {
@@ -22,6 +22,7 @@ body {
 
 .center {
   text-align: center;
+  color: black;
 }
 
 .col-sm-6, .col-sm, .col-sm-9, .col-sm-3 {
@@ -33,6 +34,9 @@ body {
 
 .text {
   text-align: justify;
+  font-family: 'serif';
+  font-size: 120%;
+  color: black;
 }
 
 .border-line {

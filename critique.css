@@ -7,7 +7,7 @@ body {
 }
   
 .navbar {
-  background-color: black;
+  background-color: #212529;
 }
 
 .container {
@@ -25,19 +25,11 @@ body {
   text-align: center;
 }
 
-.img-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .text {
   padding-top: 1%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
-.col-md p {
+.col-md-9 p {
   font-family: 'serif';
   font-size: 120%;
   text-align: justify;

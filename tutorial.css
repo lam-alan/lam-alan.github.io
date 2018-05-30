@@ -7,7 +7,7 @@ body {
 }
   
 .navbar {
-  background-color: black;
+  background-color: #212529;
 }
 
 .container {
@@ -25,10 +25,6 @@ body {
 }
 
 .article {
-  border-top: 2px solid gray;
-  border-bottom: 2px solid gray;
-  margin-right: 7%;
-  margin-left: 7%;
   margin-bottom: 7%;
 }
 
@@ -40,7 +36,12 @@ a, a:hover {
   margin-top: 2%;
 }
 
-.col-md-10 p {
+.col-md-9 {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.col-md-9 p {
   margin-top: 2%;
   text-align: justify;
   font-family: 'serif';
