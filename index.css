@@ -22,7 +22,7 @@ body, html {
 }
 
 .bg h1 {
-  font-size: 10vh;
+  font-size: 9vh;
 }
 
 .jumbotron {
@@ -42,7 +42,7 @@ body, html {
 .col-md-5 p, .col-md-9 p {
   font-family: 'serif';
   text-align: justify;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .col-md-4 {
