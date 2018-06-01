@@ -13,14 +13,10 @@ body, html {
 }
 
 .bg {
-  background: #360033;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #360033;
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);
+  background: linear-gradient(to right, #0b8793, #360033);
   height: 100%;
-}
-
-.title {
-  color: white;
 }
 
 .bg h1 {
@@ -28,30 +24,30 @@ body, html {
 }
 
 #intro {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: center;
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.intro-row {
+.intro-row, .mywebsite-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-#intro p, #about p, #critique, #tutorials {
+#home, #intro, #about, #critique, #tutorials, #links {
   color: white;
 }
 
 #about {
-  background: #373B44;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #373B44;
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+  background: linear-gradient(to right, #4286f4, #373B44);
 }
 
 .col-sm-6, .col-sm-7 {
@@ -64,19 +60,39 @@ body, html {
 }
 
 #critique {
-  background: #355C7D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #355C7D;
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
 }
 
 #tutorials {
-  background: #1D4350;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1D4350;
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+  background: linear-gradient(to right, #A43931, #1D4350);
 }
 
 .tutorial-article {
   margin-bottom: 7%;
+}
+
+#mywebsite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DC2424;
+  background: -webkit-linear-gradient(to left, #4A569D, #DC2424);
+  background: linear-gradient(to left, #4A569D, #DC2424);
+  height: 100%;
+}
+
+#mywebsite a {
+  color: white;
+}
+
+#links {
+  background: #C04848;
+  background: -webkit-linear-gradient(to left, #480048, #C04848);
+  background: linear-gradient(to left, #480048, #C04848);
 }
 
 #menu {
@@ -141,13 +157,16 @@ a:hover {
   background-color: black;
 }
 
-@media screen and (max-width: 700px) {
-  .menu {
+@media screen and (max-width: 800px) {
+  #menu {
     visibility: hidden;
+  }
+  body {
+    padding-top: 50px;
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .navbar {
     visibility: hidden;
   }

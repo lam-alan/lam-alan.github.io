@@ -14,34 +14,34 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <div class="navbar-nav">
-          <a class="active" class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="#home">Home</a>
           <a class="nav-link" href="#about">About Me</a>
-          <a class="nav-link" href="critique.html">Critique</a>
-          <a class="nav-link" href="tutorial.html">Tutorials</a>
-          <a class="nav-link" href="https://alan-lam.github.io/" target="_blank">My First Website</a>
-          <a class="nav-link" href="links.html">Resources</a>
+          <a class="nav-link" href="#critique">Critique</a>
+          <a class="nav-link" href="#tutorials">Tutorials</a>
+          <a class="nav-link" href="#mywebsite">My First Website</a>
+          <a class="nav-link" href="#links">Resources</a>
         </div>
       </div>
     </nav>
     <div id="menu">
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#critique">Critique</a></li>
         <li><a href="#tutorials">Tutorials</a></li>
-        <li><a href="https://alan-lam.github.io/">My First Website</a></li>
-        <li><a href="links.html">Resources</a></li>
+        <li><a href="#mywebsite">My First Website</a></li>
+        <li><a href="#links">Resources</a></li>
       </ul>
     </div>
     <div id="home" class="jumbotron bg">
-      <div class="title">
+      <div>
         <h1>&lt;/Web Development&gt;</h1>
         <h3>From A Beginner's Perspective</h3>
       </div>
     </div>
     <div class="contentDiv">
-      <img class="down_arrow" src="./pictures/down_arrow.png">
-      <img class="up_arrow" src="./pictures/up_arrow.png">
+      <a href="#intro"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#home"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
     </div>
     <div id="intro" class="jumbotron">
       <div class="row intro-row">
@@ -51,13 +51,13 @@
       </div>
     </div>
     <div class="contentDiv">
-      <img class="down_arrow" src="./pictures/down_arrow.png">
-      <img class="up_arrow" src="./pictures/up_arrow.png">
+      <a href="#about"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#intro"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
     </div>
     <div id="about" class="jumbotron">
       <div class="row">
         <div class="col-sm-3">
-          <div class="title">
+          <div>
             <h1>&lt;/About Me&gt;</h1>
           </div>
         </div>
@@ -77,13 +77,13 @@
       </div>
     </div>
     <div class="contentDiv">
-      <img class="down_arrow" src="./pictures/down_arrow.png">
-      <img class="up_arrow" src="./pictures/up_arrow.png">
+      <a href="#critique"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#about"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
     </div>
     <div id="critique" class="jumbotron">
       <div class="row">
         <div class="col-sm-3">
-          <div class="title">
+          <div>
             <h1>&lt;/Critique&gt;</h1>
           </div>
         </div>
@@ -109,13 +109,13 @@
       </div>
     </div>
     <div class="contentDiv">
-      <img class="down_arrow" src="./pictures/down_arrow.png">
-      <img class="up_arrow" src="./pictures/up_arrow.png">
+      <a href="#tutorials"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#critique"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
     </div>
     <div id="tutorials" class="jumbotron">
       <div class="row">
         <div class="col-sm-3">
-          <div class="title">
+          <div>
             <h1>&lt;/Tutorials&gt;</h1>
           </div>
         </div>
@@ -136,7 +136,53 @@
       </div>
     </div>
     <div class="contentDiv">
-      <img class="down_arrow" src="./pictures/down_arrow.png">
+      <a href="#mywebsite"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#tutorials"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
+    </div>
+    <div id="mywebsite" class="jumbotron">
+      <div class="row mywebsite-row">
+        <div class="col-sm">
+          <a href="https://alan-lam.github.io" target="_blank">My First Website</a>
+        </div>
+      </div>
+    </div>
+    <div class="contentDiv">
+      <a href="#links"><img class="down_arrow" src="./pictures/down_arrow.png"></a>
+      <a href="#mywebsite"><img class="up_arrow" src="./pictures/up_arrow.png"></a>
+    </div>
+    <div id="links" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">
+          <h1>&lt;/Resources&gt;</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Learning</h3>
+          <h5>Where To Start Learning HTML and CSS (or any other programming language)</h5>
+          <img class="img-fluid" src="./pictures/resources/Codecademy.svg.png">
+          <p>Codecademy is an online platform that offers free coding classes. Each lesson is like an interactive tutorial, where they go over one concept and give you a task to complete to apply what you've learned. It is a great starting point for beginners.</p>
+          <img class="img-fluid" src="./pictures/resources/freecodecamp.jpg">
+          <p>freeCodeCamp is a non-profit organization dedicated to teaching people how to code. Like Codecademy, their lessons also consist of interactive tutorials. There is also an online community forum where people can ask each other for help, advice, and other programming-related information.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Help</h3>
+          <h5>Websites To Consult If You Get Stuck</h5>
+          <h6>(Getting answers to programming problems is usually always done through a Google search. These websites are usually among the top results. E.g. <a href="https://www.google.com/search?ei=wWcHW7mQKNHQ9APf_ZYo&q=html+center+text+vertically&oq=how+to+center+text+in+html&gs_l=psy-ab.3.4.0i71k1l8.0.0.0.35747.0.0.0.0.0.0.0.0..0.0....0...1c..64.psy-ab..0.0.0....0.OJH_rTewmRo" target="_blank">"html center text vertically"</a>)</h6>
+          <img class="img-fluid" src="./pictures/resources/w3schools.jpg">
+          <p>W3Schools is kind of like an online handbook or dictionary containing documentation and small tutorials. It's useful for looking up syntax and basic concepts.</p>
+          <img class="img-fluid" src="./pictures/resources/stackoverflow.jpg">
+          <p>Stack Overflow is a question and answer platform for developers. It is "the largest, most trusted online community for developers to learn, share their programming knowledge, and build their careers." </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Tricks</h3>
+          <h5>Resources Covering More Advanced Topics For Making Websites Look Nice</h5>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="container">
