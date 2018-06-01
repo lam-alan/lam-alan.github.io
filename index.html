@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <title>Made By A Beginner</title>
+    <title>Web Dev For Beginners</title>
     <link href="index.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -14,7 +14,7 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <div class="navbar-nav">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="active" class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="#about">About Me</a>
           <a class="nav-link" href="critique.html">Critique</a>
           <a class="nav-link" href="tutorial.html">Tutorials</a>
@@ -23,40 +23,120 @@
         </div>
       </div>
     </nav>
-    <div class="jumbotron bg">
+    <div id="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#critique">Critique</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="https://alan-lam.github.io/">My First Website</a></li>
+        <li><a href="links.html">Resources</a></li>
+      </ul>
+    </div>
+    <div id="home" class="jumbotron bg">
       <div class="title">
         <h1>&lt;/Web Development&gt;</h1>
         <h3>From A Beginner's Perspective</h3>
       </div>
     </div>
-    <div id="about" class="jumbotron"></div>
-    <div class="container about-section">
-      <div class="row">
-        <div class="col-md">
-          <h1 id="title-about">&lt;/About Me&gt;</h1>
+    <div class="contentDiv">
+      <img class="down_arrow" src="./pictures/down_arrow.png">
+      <img class="up_arrow" src="./pictures/up_arrow.png">
+    </div>
+    <div id="intro" class="jumbotron">
+      <div class="row intro-row">
+        <div class="col-sm-4">
+          <p>Breaking down complicated concepts into simple building blocks. That's what I'm interested in. And that's what I intend to do with this website. Break down the process of making websites and provide you with building blocks so that you can make your own website from scratch.</p>
         </div>
       </div>
+    </div>
+    <div class="contentDiv">
+      <img class="down_arrow" src="./pictures/down_arrow.png">
+      <img class="up_arrow" src="./pictures/up_arrow.png">
+    </div>
+    <div id="about" class="jumbotron">
       <div class="row">
-        <div class="col-md-5">
-          <p>I'm Alan Lam. At the time of this writing, I am a third-year Math-Computer Science student at UCSD. As likely as it may seem, I did not really learn how to make websites by taking computer science courses. There was one lab in the Software Engineering course that went over making websites, but I didn't really learn much from that.</p>
-          <p>It's May 2018 right now. I learned how to make a website in January 2018. I wouldn't exactly call myself an expert when I've only been doing this for about 5 months. But I do have a basic understanding of the language and components of a website. I did build this website from scratch after all. It may not be fancy and flashy - nor may it follow traditional web development standards - but it works.</p>
-          <p>HTML (Hypertext Markup Language and CSS (Cascading Style Sheets) are the two main components for building a website. I learned how to work with both of them by taking classes on <a class="link" href="https://www.codecademy.com/" target="_blank">Codecademy</a>, an online platform that offers free coding classes. Once I understood the basics, I applied the concepts and <a href="https://alan-lam.github.io" target="_blank">made a website</a>. Yeah, I just jumped right in. It wasn't a flawless transition - as hardly anything ever is - but there is a learning curve to web development, and, for me, jumping right in was getting over the curve.</p>
-        </div>
-        <div class="col-md-4">
-          <div>
-            <img class="img-fluid" src="./pictures/self_full.jpg">
-            <p id="pc">Photo Credit: Lan Wang</p>
+        <div class="col-sm-3">
+          <div class="title">
+            <h1>&lt;/About Me&gt;</h1>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-9">
-          <p>The third main component for building a website is JavaScript, which is a programming language. This is usually what makes websites fancy and flashy. This is also another reason why I would not consider myself an expert. I haven't learned how to work with it yet.</p>
-          <p>I'm still updating and maintaining the first website I created. That sounds a little sentimental, which was unintentional, but it kind of is in a way. It was the first real website I created on my own. It was when I was able to confidently say, "I know how to make a website". Maintaining that website, which is a portfolio of my hobbies, is, well, one of my hobbies. While I do not expect people to visit it - <a href="https://www.google.com/search?ei=ZFUHW7-XL7q-0PEPhL2fwA8&q=https%3A%2F%2Falan-lam.github.io&oq=https%3A%2F%2Falan-lam.github.io&gs_l=psy-ab.3..33i160k1.11070.17302.0.18094.32.30.2.0.0.0.179.3093.18j12.30.0....0...1c.1.64.psy-ab..0.24.2409...0j0i131k1j0i10k1j0i22i30k1j0i22i10i30k1.0.PXOY7iOQs18" target="_blank">or find it through a Google search much less</a> - I still treat it as if people are visiting it. So I am still learning little things here and there to improve it.</p>
-          <p>This website is the second website I've created. This website is the result of roughly 5 months of learning and building. Being a student at the time, the total number of hours is actually less than 5 months. Whether that's impressive or not, I would say that the time it takes to learn isn't that long. Granted, having programming experience helps immensely, but you don't really need to know how to code to make a website.</p>
+        <div class="col-sm-6">
+          <div class="about-text">
+            <p>I'm Alan Lam and I'm a self-taught website maker.</p>
+            <p>With only 5 months of experience, I wouldn't call myself a web developer. To me, web developer makes it sound like I'm an expert.</p>
+            <p>So although I'm no expert, I do have a basic understanding of the language and components of a website. I did make this website after all. It may not be fancy and flashy - nor may it follow traditional web development standards - but it works.</p>
+            <p>I learned how to make websites by taking classes on <a class="link" href="https://www.codecademy.com/" target="_blank">Codecademy</a>, an online platform that offers free coding classes. Once I understood the basics, I applied the concepts and <a class="link" href="https://alan-lam.github.io" target="_blank">made a website</a>. Yeah, I just jumped right in. It wasn't a flawless transition - as hardly anything ever is - but there is a learning curve to web development, and, for me, jumping right in was getting over the curve.</p>
+            <p>I'm still updating and maintaining the first website I created. That sounds a little sentimental, which was unintentional, but it kind of is in a way. It was the first real website I created on my own. It was when I was able to confidently say, "I know how to make a website". Maintaining that website, which is a portfolio of my hobbies, is, well, one of my hobbies. While I do not expect people to visit it - <a class="link" href="https://www.google.com/search?ei=ZFUHW7-XL7q-0PEPhL2fwA8&q=https%3A%2F%2Falan-lam.github.io&oq=https%3A%2F%2Falan-lam.github.io&gs_l=psy-ab.3..33i160k1.11070.17302.0.18094.32.30.2.0.0.0.179.3093.18j12.30.0....0...1c.1.64.psy-ab..0.24.2409...0j0i131k1j0i10k1j0i22i30k1j0i22i10i30k1.0.PXOY7iOQs18" target="_blank">or find it through a Google search much less</a> - I still treat it as if people are visiting it. So I am still learning little things here and there to improve it.</p>
+            <p>This website is the second website I've created. This website is the result of roughly 5 months of learning and building. Whether that's impressive or not, I would say that the time it takes to learn isn't that long. Granted, having programming experience helps immensely, but you don't really need to know how to code to make a website.</p>
           <p>With that said, welcome to this website. Made by a beginner.</p>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="contentDiv">
+      <img class="down_arrow" src="./pictures/down_arrow.png">
+      <img class="up_arrow" src="./pictures/up_arrow.png">
+    </div>
+    <div id="critique" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="title">
+            <h1>&lt;/Critique&gt;</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="critique-article">
+            <h3>Is Codecademy Good For Learning How to Code?</h3>
+            <h6>Isn't the answer always "yes" to academic works with questions as titles?</h6>
+            <img class="img-fluid" src="./pictures/codecademy_critique.jpg">
+            <p>Codecademy. "The Leaders in Online Coding" they proclaim. Chances are, you've probably heard of it. If not, ask someone who knows how to code. Not only will they likely have heard of it, but they also might even recommend it too. With 25 million users, Codecademy certainly is popular. But is it effective?</p>
+            <p>Let's start with it's biggest selling point. It is free. Despite how badly that may sound, you actually do learn quite a lot of new things. That is, if you've never coded before. There's not really anything to lose - in terms of money anyways. So that's good.</p>
+            <p>But the saying, "you get what you pay for" really comes into play here. The quality of education you get from Codecademy courses just doesn't compare to the quality of education from university courses. It is totally possible to learn solely from Codecademy and get a job. But people who take university courses are likely going to be better programmers.</p>
+            <p>This is because Codecademy courses are essentially handing you a bag of facts. More specifically, a bag of syntax. It is true that in order to know how to code, you have to know the language you're using. This is where Codecademy is effective. But knowing the language is only a <i>small</i> part of coding. The big part is knowing how to problem solve. This is where Codecademy fails.</p>
+            <p>That stems from the way the courses are taught. They put a lot of emphasis on teaching how code is written. Now that is important because the target audience is people who've never coded before. But the exercises boil down to, "Here's how to do this. Now do it here."</p>
+            <img class="img-fluid" src="./pictures/codecademy_instructions.jpg">
+            <p>I mean, they tell you <i>exactly</i> where to put the id.</p>
+            <p>To be fair, that is the first time they are introducing the concept of an id attribute. So it's fine as long as you get a chance to apply it later. However, the courses don't revisit information you've previously learned. The obvious problem with that is you forget what you've learned. The subtle, and more important, problem with that is it doesn't give you the chance to <i>actually</i> apply what you've learned. In the exercises, the only reason you do something is because you <i>just</i> learned it. There's not a moment when you figure out, "Oh, in order to get what I want, I have to use what I previously learned." Emphasis on figure out.</p>
+            <p>Now, with the Pro version, you do get the opportunities to apply what you've learned and problem solve your way through a project. But you have to pay. And most people are using Codecademy because it's free.</p>
+            <p>Codecademy is a good starting point for learning web development -  or any programming - but there are flaws. By taking the courses, you walk away knowing the syntax of the language, but not with the mentality of a programmer. If you just want to get your hands wet with coding, then Codecademy is great for that. If you want to dive in deep, then do more than just Codecademy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentDiv">
+      <img class="down_arrow" src="./pictures/down_arrow.png">
+      <img class="up_arrow" src="./pictures/up_arrow.png">
+    </div>
+    <div id="tutorials" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="title">
+            <h1>&lt;/Tutorials&gt;</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row tutorial-article">
+        <div class="col-sm-7">
+          <a href="github_tutorial.html" target="_blank"><h4>How To Set Up GitHub To Host Your Website (And Set Up Visual Studio Code)</h4>
+          <img class="img-fluid" src="./pictures/github_tutorial/github.jpg"></a>
+          <p>Wix appears to be the most popular option for making websites. It's probably easy to use too. But how about trying to do it all from scratch? This tutorial will go over setting up the tools to code your website and publish it online.</p>
+        </div>
+      </div>
+      <div class="row tutorial-article">
+        <div class="col-sm-7">
+          <a href="website_tutorial.html" target="_blank"><h4>How To Make A Simple Website (With HTML, CSS, and Bootstrap)</h4>
+          <img class="img-fluid" src="./pictures/website_tutorial/cover_picture.jpg"></a>
+          <p>Nowadays, there a lot of options to make websites without having to learn how to code. Maybe that's because code seems daunting. In its own right, code is another language. And like any language, it can be learned. This tutorial will break down the components of websites and - hopefully - give you a basic understanding of the language of website-making so you can make your own. With code.</p>
+        </div>
+      </div>
+    </div>
+    <div class="contentDiv">
+      <img class="down_arrow" src="./pictures/down_arrow.png">
     </div>
     <div class="footer">
       <div class="container">
@@ -67,9 +147,9 @@
         </div>
       </div>
     </div>
-    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
