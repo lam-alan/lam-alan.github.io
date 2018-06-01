@@ -1,89 +1,154 @@
 body, html {
   height: 100%;
   margin: 0;
+  background-color: black;
 }
 
 .navbar {
   background-color: #212529;
 }
 
+.jumbotron {
+  margin: 0;
+}
+
 .bg {
-  background: url('./pictures/web-design-2038872_1920.jpg') no-repeat fixed;
-  background-size: cover;
+  background: #360033;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .title {
-  background-color: white;
-  opacity: 0.9;
+  color: white;
 }
 
 .bg h1 {
   font-size: 9vh;
 }
 
-.jumbotron {
-  background-color: white;
-}
-
-.about-section {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-}
-
-#title-about {
+#intro {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.col-md-5 p, .col-md-9 p {
-  font-family: 'serif';
-  text-align: justify;
-  font-size: 110%;
-}
-
-.col-md-4 {
-  background-color: rgba(236, 230, 230, 1);
+.intro-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#pc {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 100%;
-  color: gray;
+#intro p, #about p, #critique, #tutorials {
+  color: white;
+}
+
+#about {
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.col-sm-6, .col-sm-7 {
+  text-align: justify;
+  margin-left: 2%;
+}
+
+.link {
+  color: darkblue;
+}
+
+#critique {
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#tutorials {
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tutorial-article {
+  margin-bottom: 7%;
+}
+
+#menu {
+  position: fixed;
+  z-index: 1;
+  right: 10%;
+  top: 30%;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 15%;
+}
+
+a:hover {
+  color: white;
+}
+
+.active, #menu ul li a:hover  {
+  background-color: black;
+}
+
+.contentDiv {
+  position: relative;
+}
+
+@keyframes bouncing-down {
+  0% {bottom: 0;}
+  50% {bottom: 20px;}
+  100% {bottom: 0;}
+}
+
+@keyframes bouncing-up {
+  0% {top: 0;}
+  50% {top: 20px;}
+  100% {top: 0;}
+}
+
+.down_arrow {
+  animation: bouncing-down 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.up_arrow {
+  animation: bouncing-up 1s infinite ease-in-out;
+  top: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
 }
 
 .footer {
   background-color: black;
 }
 
-#back2Top {
-  width: 40px;
-  line-height: 40px;
-  overflow: hidden;
-  z-index: 999;
-  cursor: pointer;
-  -moz-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  position: fixed;
-  bottom: 50px;
-  right: 20px;
-  background-color: #DDD;
-  color: #555;
-  text-align: center;
-  font-size: 30px;
-  text-decoration: none;
+@media screen and (max-width: 700px) {
+  .menu {
+    visibility: hidden;
+  }
 }
 
-#back2Top:hover {
-  background-color: #DDF;
-  color: #000;
+@media screen and (min-width: 700px) {
+  .navbar {
+    visibility: hidden;
+  }
 }
