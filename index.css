@@ -180,17 +180,3 @@ a:hover {
     visibility: hidden;
   }
 }
-
-table {
-  border: 2px solid green;
-}
-
-tr {
-  border: 2px solid blue;
-  vertical-align: top;
-}
-
-td {
-  width: 100%;
-  border: 2px solid red;
-}
