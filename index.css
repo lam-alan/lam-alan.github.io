@@ -65,6 +65,15 @@ body, html {
   background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
 }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  color: white;
+}
+
 #tutorials {
   background: #1D4350;
   background: -webkit-linear-gradient(to right, #A43931, #1D4350);

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <title>Web Dev For Beginners</title>
+    <link href="website_tutorial.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="menu">
+      <ul>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#divs">Divs</a></li>
+        <li><a href="#css">CSS</a></li>
+      </ul>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1>How To Make A Very Simple Website (With HTML, CSS, and Bootstrap)</h1>
+          <img class="img-fluid" src="./pictures/website_tutorial/cover_picture.jpg">
+          <p>(For this tutorial, you'll need a text/code editor. A simple text editor like Notepad (Windows) or TextEdit (Mac) suffices. I'll be using Notepad for this tutorial. But code editors, like <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, come with helpful features like auto-indenting, auto-complete, and color-coding.)</p>
+          <p>This tutorial is intended to just introduce ideas so you become familiar with them. Other classes, like Codecademy, go much deeper, but it's easier when you're familiar with the concepts.</p>
+          <h3>Rectangles, rectangles, rectangles</h3>
+          <p>A webpage is just a big rectangle with smaller rectangles inside. And inside those smaller rectangles are words, images, and videos.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/colored_rect.jpg">
+          <p>For example, these are some of the rectangles for this webpage.</p>
+          <p>Rectangles, and the content inside (called elements), are created with code. In particular, HTML, which stands for Hypertext Markup Language.</p>
+          <p>Before moving on, open your text/code editor, create a new file, and save the file as "index.html" (Without the quotes). I also recommend making a new folder on your desktop and moving the file there.</p>
+          <h3 id="text">Text</h3>
+          <p>The two main types of text you're going to see on a website are headings and paragraphs. Headings are the big bold titles and paragraphs are the regular words, like the ones in this sentence.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/heading.jpg">
+          <p>This is the syntax for creating a heading element. The "&lt;h1&gt;" is called an opening tag. The "&lt;/h1&gt;" is called a closing tag. The "h1" means it is a heading with the biggest size. The numbers range from 1-6 where 1 is the largest and 6 is the smallest. These numbers only apply for headings.</p>
+          <p>Save the file, go to the place where it is saved on your computer, and double click on it. You should see the words "This is a heading" at the top left.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/paragraph.jpg">
+          <p>Below the heading is the syntax for a paragraph element. The opening tag (&lt;p&gt;) is at the beginning and the closing tag (&lt;/p&gt;) is at the end. As you can guess, the "p" stands for paragraph. If you save your file and open it, you should see the paragraph element below the heading.</p>
+          <h3 id="images">Images</h3>
+          <img class="img-fluid" src="./pictures/website_tutorial/image.jpg">
+          <p>This is the syntax for an image. The "src" is short for "source", which specifies where the image is located. If the image is online, then the src would be the link to that image. If the image is offline (on your computer), then the src would be the path on your computer to that image.</p>
+          <p><a href="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0" target="_blank">Here</a> is a sample image you can use to try. There are two ways to go about this. You can put <code>&lt;img src="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0"&gt;</code> The src is the link to the image because the image is online. On the other hand, if you download it and save it in the same folder as the index.html file, the code for the image would be <code>&lt;img src="panoramic-3049543_1920.jpg"&gt;</code> Here, the image is offline (on your computer) so the src is the path on your computer to the image. Since they are in the same folder, the path is just the name of the image file. If the image isn't in the same folder, then the path would probably be something like "C:\Users\Alan\Pictures\pic.jpg"</p>
+          <h3 id="divs">Divs</h3>
+          <p>"Div" is short for "division". In this case, division means a part of the webpage that has been divided. These are the rectangles I mentioned earlier. One way of looking at this is like imagining the webpage as a big rectangle. Adding divs is like adding smaller rectangles inside the big rectangle.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/div.jpg">
+          <p>Here is the syntax for creating a div. By convention, everything inside a div is indented by 2 spaces. If you save the file and open it, nothing should change. That is because divs don't add anything visual. They are used to place elements that should logically be together. For example, the menu on the right is inside it's own div because it contains links to places on this page. So it is logical to place them together inside a div. The footer at the bottom is in its own div because it is separate from the rest of the elements on this webpage.</p> <p>Because they are related, you would want related elements to look the same. For example, for this webpage, the instructional text is white and menu links are blue. Putting logically related elements inside a div makes it easy to style them so they look the same.</p>
+          <h3 id="css">CSS</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <p>Alan Lam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
