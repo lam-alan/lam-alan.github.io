@@ -13,13 +13,14 @@
         <li><a href="#text">Text</a></li>
         <li><a href="#images">Images</a></li>
         <li><a href="#divs">Divs</a></li>
+        <li><a href="#classes">Classes</a></li>
         <li><a href="#css">CSS</a></li>
       </ul>
     </div>
     <div class="jumbotron">
       <div class="row">
         <div class="col-sm-7">
-          <h1>How To Make A Very Simple Website (With HTML, CSS, and Bootstrap)</h1>
+          <h1>HTML & CSS Basics</h1>
           <img class="img-fluid" src="./pictures/website_tutorial/cover_picture.jpg">
           <p>(For this tutorial, you'll need a text/code editor. A simple text editor like Notepad (Windows) or TextEdit (Mac) suffices. I'll be using Notepad for this tutorial. But code editors, like <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>, come with helpful features like auto-indenting, auto-complete, and color-coding.)</p>
           <p>This tutorial is intended to just introduce ideas so you become familiar with them. Other classes, like Codecademy, go much deeper, but it's easier when you're familiar with the concepts.</p>
@@ -33,7 +34,8 @@
           <p>The two main types of text you're going to see on a website are headings and paragraphs. Headings are the big bold titles and paragraphs are the regular words, like the ones in this sentence.</p>
           <img class="img-fluid" src="./pictures/website_tutorial/heading.jpg">
           <p>This is the syntax for creating a heading element. The "&lt;h1&gt;" is called an opening tag. The "&lt;/h1&gt;" is called a closing tag. The "h1" means it is a heading with the biggest size. The numbers range from 1-6 where 1 is the largest and 6 is the smallest. These numbers only apply for headings.</p>
-          <p>Save the file, go to the place where it is saved on your computer, and double click on it. You should see the words "This is a heading" at the top left.</p>
+          <p>Save the file, go to the place where it is saved on your computer, and open* it. You should see the words "This is a heading" at the top left.</p>
+          <p>*From this point on, when I say open a file - or if you want to see the changes you made -, I mean refresh the page. If you haven't closed the page yet.</p>
           <img class="img-fluid" src="./pictures/website_tutorial/paragraph.jpg">
           <p>Below the heading is the syntax for a paragraph element. The opening tag (&lt;p&gt;) is at the beginning and the closing tag (&lt;/p&gt;) is at the end. As you can guess, the "p" stands for paragraph. If you save your file and open it, you should see the paragraph element below the heading.</p>
           <h3 id="images">Images</h3>
@@ -43,8 +45,36 @@
           <h3 id="divs">Divs</h3>
           <p>"Div" is short for "division". In this case, division means a part of the webpage that has been divided. These are the rectangles I mentioned earlier. One way of looking at this is like imagining the webpage as a big rectangle. Adding divs is like adding smaller rectangles inside the big rectangle.</p>
           <img class="img-fluid" src="./pictures/website_tutorial/div.jpg">
-          <p>Here is the syntax for creating a div. By convention, everything inside a div is indented by 2 spaces. If you save the file and open it, nothing should change. That is because divs don't add anything visual. They are used to place elements that should logically be together. For example, the menu on the right is inside it's own div because it contains links to places on this page. So it is logical to place them together inside a div. The footer at the bottom is in its own div because it is separate from the rest of the elements on this webpage.</p> <p>Because they are related, you would want related elements to look the same. For example, for this webpage, the instructional text is white and menu links are blue. Putting logically related elements inside a div makes it easy to style them so they look the same.</p>
+          <p>Here is the syntax for creating a div. By convention, everything inside a div is indented by 2 spaces. If you save the file and open it, nothing should change. That is because divs don't add anything visual. They are used - not exclusively - to place elements that should logically be together. For example, the menu on the right is inside it's own div because it contains links to places on this page. So it is logical to place them together inside a div. The footer at the bottom is in its own div because it is separate from the rest of the elements on this webpage.</p> <p>Because they are related, you would want related elements to look the same. For example, for this webpage, the instructional text is white and menu links are blue. Putting logically related elements inside a div makes it easy to style them so they look the same.</p>
+          <h3 id="classes">Classes</h3>
+          <p>Classes are like labels. It <i>can</i> be thought of like an actual class (in college), where a math class has math majors and a history class has history majors. Like in the college class example, elements inside a class are expected to be related to each other in some way. If that sounds familiar, it's because divs have classes. Back to the college class example, putting math students inside a classroom is like putting elements in a div. Putting a label on the door that says "Math Class" is like adding a class to that div.</p>
+          <p>I think the best way to understand classes is to try using them in an example. So I'd like to introduce an exercise at this point.</p>
+          <p>In your index.html file, delete everything and:</p>
+          <ul>
+            <li>Add a div</li>
+            <li>Add a heading (h1) that says "Colors"</li>
+            <li>Add three paragraph elements, each containing the name of a color</li>
+          </ul>
+          <a class="btn toggle-text" data-toggle="collapse" href="#collapseExercise1">Click Here For Answer</a>
+          <div class="collapse" id="collapseExercise1">
+            <img class="img-fluid" src="./pictures/website_tutorial/exercise1.jpg">
+          </div>
+          <br>
+          <img class="img-fluid" src="./pictures/website_tutorial/exercise1_result.jpg">
+          <p>It should look something like this.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/classes.jpg">
+          <p>This is the syntax for adding a class to a div. You could name a class anything you want. I chose "colors" because that made sense in this situation.</p>
           <h3 id="css">CSS</h3>
+          <p>CSS stands for "Cascading Style Sheets". It is a <a href="https://www.quora.com/Is-CSS-or-HTML-a-programming-language" target="_blank">"programming"</a> language used to dictate how elements in a document should look. Color, backgrounds, size, and position are the main properties (for me anyways) that are determined using CSS.</p>
+          <p>At this point, open a brand new text file and save it as "index.css" (Without the quotes). And move it to the folder containing index.html.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/css.jpg">
+          <p>This is the syntax for CSS. If you want to target a class, you put a period in front of the class name. Like in the html file, there's 2 spaces of indentation. Again, it's by convention. Whitespace doesn't actually have an effect on the result; it's there for readability.</p>
+          <p>By putting "color: purple", I'm specifying that elements with the class "colors" should be purple.</p>
+          <p>Try saving both files (index.html and index.css) and opening index.html.</p>
+          <p>Nothing should have changed. That's because we need to "link" the html and css files.</p>
+          <img class="img-fluid" src="./pictures/website_tutorial/linking.jpg">
+          <p>By doing this, index.html knows which file to look at for styling rules. "href" is similar to "src" in that it specifies the location of a file. Since index.css and index.html are in the same folder, the location is the name of the file. Honestly, I'm a little unsure about "rel". I believe it's short for "relation" and it specifies what type of file it is. As mentioned before, the newline between the link and div is only there for readability.</p>
+          <p>Now try opening index.html again.</p>
         </div>
       </div>
     </div>

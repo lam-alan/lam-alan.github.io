@@ -84,6 +84,15 @@ body, html {
   margin-bottom: 7%;
 }
 
+
+#links .col-sm-6 {
+  border-bottom: 2px solid gray;
+}
+
+#links img {
+  margin-top: 3%;
+}
+
 #mywebsite {
   display: flex;
   justify-content: center;

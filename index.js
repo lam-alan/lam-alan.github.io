@@ -12,7 +12,7 @@ function onScroll(event){
       currLink.addClass("active");
     }
     else{
-    currLink.removeClass("active");
+      currLink.removeClass("active");
     }
   });
 }
