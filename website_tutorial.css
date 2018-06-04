@@ -19,6 +19,11 @@ code {
   background-color: white;
 }
 
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 #menu {
   position: fixed;
   z-index: 1;
@@ -26,7 +31,7 @@ code {
   top: 30%;
 }
 
-li {
+#menu li {
   list-style-type: none;
   margin-bottom: 15%;
 }
@@ -35,6 +40,6 @@ a:hover {
   color: white;
 }
 
-.active, #menu ul li a:hover  {
+#menu ul li a:hover  {
   background-color: black;
 }
