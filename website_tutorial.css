@@ -3,6 +3,10 @@ body, html {
   background-color: black;
 }
 
+.navbar {
+  background-color: #212529;
+}
+
 .jumbotron {
   background: #348F50;
   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
@@ -42,4 +46,19 @@ a:hover {
 
 #menu ul li a:hover  {
   background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+  #menu {
+    visibility: hidden;
+  }
+  body {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    visibility: hidden;
+  }
 }
