@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <title>Web Dev For Beginners</title>
-    <link href="website_tutorial.css" type="text/css" rel="stylesheet">
+    <title>Web Dev For Beginners - HTML & CSS Basics</title>
+    <link href="html_css_basics.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
@@ -43,30 +43,30 @@
       <div class="row">
         <div class="col-sm-7">
           <h1 id="top">HTML & CSS Basics</h1>
-          <img class="img-fluid" src="./pictures/website_tutorial/cover_picture.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/cover_picture.jpg">
           <p>For this tutorial, you'll need a text/code editor. A simple text editor like Notepad (Windows) or TextEdit (Mac) suffices. I'll be using Notepad for this tutorial.</p>
           <p>This tutorial is intended to just introduce ideas so you become familiar with them. Other classes, like Codecademy, go much deeper, but it's easier when you're familiar with the concepts.</p>
           <h3>Rectangles, rectangles, rectangles</h3>
           <p>A webpage is just a big rectangle with smaller rectangles inside. And inside those smaller rectangles are words, images, videos, and many other things.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/colored_rect.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/colored_rect.jpg">
           <p>For example, these are some of the rectangles for this webpage.</p>
           <p>Rectangles, and the content inside (called elements), are created with code. In particular, HTML, which stands for Hypertext Markup Language.</p>
           <p>Before moving on, open your text/code editor, create a new file, and save the file as "index.html" (Without the quotes). I also recommend making a new folder on your desktop and moving the file there.</p>
           <h3 id="text">Text</h3>
           <p>The two main types of text you're going to see on a website are headings and paragraphs. Headings are the big bold titles and paragraphs are the regular words, like the ones in this sentence.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/heading.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/heading.jpg">
           <p>This is the syntax for creating a heading element. The "&lt;h1&gt;" is called an opening tag. The "&lt;/h1&gt;" is called a closing tag. The "h1" means it is a heading with the biggest size. The numbers range from 1-6 where 1 is the largest and 6 is the smallest. These numbers only apply for headings.</p>
           <p>Save the file, go to the place where it is saved on your computer, and open* it. You should see the words "This is a heading" at the top left.</p>
           <p><strong>*From this point on, when I say open index.html - or if you want to see the changes you made -, I mean <i>refresh</i> the page if you haven't closed the page yet. Also, it is implied that you should <i>save</i> files after making changes to them.</strong></p>
-          <img class="img-fluid" src="./pictures/website_tutorial/paragraph.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/paragraph.jpg">
           <p>Below the heading is the syntax for a paragraph element. The opening tag (&lt;p&gt;) is at the beginning and the closing tag (&lt;/p&gt;) is at the end. As you can guess, the "p" stands for paragraph. If you save your file and open it, you should see the paragraph element below the heading.</p>
           <h3 id="images">Images</h3>
-          <img class="img-fluid" src="./pictures/website_tutorial/image.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/image.jpg">
           <p>This is the syntax for an image. The "src" is short for "source", which specifies where the image is located. If the image is online, then the src would be the link to that image. If the image is offline (on your computer), then the src would be the path on your computer to that image.</p>
           <p><a href="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0" target="_blank">Here</a> is a sample image you can use to try. There are two ways to go about this. You can put <code>&lt;img src="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0"&gt;</code> The src is the link to the image because the image is online. On the other hand, if you download it and <strong>save it in the same folder as the index.html file</strong>, the code for the image would be <code>&lt;img src="panoramic-3049543_1920.jpg"&gt;</code> Here, the image is offline (on your computer) so the src is the path on your computer to the image. Since they are in the same folder, the path is just the name of the image file. If the image isn't in the same folder, then the path would probably be something like "C:\Users\Alan\Pictures\pic.jpg"</p>
           <h3 id="divs">Divs</h3>
           <p>"Div" is short for "division". In this case, division means a part of the webpage that has been divided. These are the rectangles I mentioned earlier. One way of looking at this is like imagining the webpage as a big rectangle. Adding divs is like adding smaller rectangles inside the big rectangle.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/div.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/div.jpg">
           <p>Here is the syntax for creating a div. By convention, everything inside a div is indented by 2 spaces. If you save the file and open it, nothing should change. That is because divs don't add anything visual. They are used - not exclusively - to place elements that should logically be together. For example, the menu on the right on this webpage (if you're viewing on desktop) is inside it's own div because it contains links to places on this page. So it is logical to place them together inside a div. The black footer at the very bottom is in its own div because it is separate from the rest of the elements on this webpage.</p> <p>Because they are related, you would want related elements to look the same. For example, for this webpage, the instructional text is white and menu links are blue. Putting logically related elements inside a div makes it easy to style them so they look the same.</p>
           <h3 id="classes">Classes</h3>
           <p>Classes are like labels. It <i>can</i> be thought of like an actual class (in college), where a math class has math majors and a history class has history majors. Like in the college class example, elements inside a class are expected to be related to each other in some way. If that sounds familiar, it's because divs have classes. Back to the college class example, putting math students inside a classroom is like putting elements in a div. Putting a label on the door that says "Math Class" is like adding a class to that div.</p>
@@ -77,53 +77,53 @@
             <li>Add a heading (h2) that says "Colors"</li>
             <li>Add three paragraph elements, one for red, blue, and green</li>
           </ul>
-          <img class="img-fluid" src="./pictures/website_tutorial/exercise1_result.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/exercise1_result.jpg">
           <p>The webpage should look something like this.</p>
           <a class="btn" data-toggle="collapse" href="#collapseExercise1">Click Here For Answer</a>
           <br>
           <div class="collapse" id="collapseExercise1">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise1.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise1.jpg">
           </div>
-          <img class="img-fluid" src="./pictures/website_tutorial/classes.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/classes.jpg">
           <p>This is the syntax for adding a class to a div. You could name a class anything you want. I chose "colors" because that made sense in this situation. It is a div containing names of colors.</p>
           <h3 id="css">CSS</h3>
           <p>At the end of the "Divs" section, I mentioned that putting elements in a div makes it easier to style related elements. The first step to achieving that is adding a class in a div. The second step is CSS.</p>
           <p>CSS stands for "Cascading Style Sheets". It is a <a href="https://www.quora.com/Is-CSS-or-HTML-a-programming-language" target="_blank">"programming"</a> language used to dictate how elements in a document should look. Color, backgrounds, size, and position are the main properties (for me anyways) that are determined using CSS.</p>
           <p>At this point, open a brand new text file and save it as "index.css" (Without the quotes). <strong>And move it to the folder containing index.html.</strong></p>
-          <img class="img-fluid" src="./pictures/website_tutorial/css.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/css.jpg">
           <p>This is the syntax for CSS. If you want to target a class, you put a period in front of the class name. Like in the html file, there's 2 spaces of indentation. Again, it's by convention. Whitespace doesn't actually have an effect on the result; it's there for readability. Also, the rules <i>must</i> end with a semicolon. </p>
           <p>By putting "color: purple", I'm specifying that elements with the class "colors" should be purple.</p>
           <p>Try saving both files (index.html and index.css) and opening index.html.</p>
           <br>
           <p>Nothing should have changed. That's because we need to "link" the html and css files.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/linking.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/linking.jpg">
           <p>By doing this, index.html knows which file to look at for styling rules. "href" is similar to "src" in that it specifies the location of a file. Since index.css and index.html are in the same folder, the location is the name of the file. As mentioned before, the newline/whitespace between the link and div is only there for readability.</p>
           <p>Now try opening index.html again. All the text should be purple. Look at index.html and see if it makes sense why this is happening.</p>
           <h3 id="ids">ID's</h3>
           <p>ID's are like classes. In fact, they <i>can</i> (but probably shouldn't) be used interchangeably. However, it makes more logical sense to give id's to a specific element or group of elements. In the college class example, it would be like giving a name to a specific student.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/ids.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/ids.jpg">
           <p>Below the colors class is the syntax for targeting an element with an id. With classes, you target them by putting a period in front of the name. With id's, you target them with a "#".</p>
           <ul>
             <li>Challenge: Try adding the red id to the corresponding element in index.html. Hint: It's similar to the way you add a class.</li>
           </ul>
           <a class="btn" data-toggle="collapse" href="#collapseExercise2">Click Here For Answer</a>
           <div class="collapse" id="collapseExercise2">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise2.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise2.jpg">
           </div>
           <p>Save both files and open index.html. Notice how the red paragraph element is red even though it is inside a div with a class called "colors", which we defined to make all elements inside that div purple. This is because ID's supersede classes. It's helpful if you to target only 1 element without changing the others that are in the same div with a class.</p>
           <ul>
             <li>Try adding id's to the other 2 paragraph elements to get this effect:</li>
           </ul>
-          <img class="img-fluid" src="./pictures/website_tutorial/exercise3_result.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/exercise3_result.jpg">
           <br>
           <a class="btn" data-toggle="collapse" href="#collapseExercise3">Click Here For Answer</a>
           <div class="collapse" id="collapseExercise3">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise3_html.jpg">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise3_css.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise3_html.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise3_css.jpg">
           </div>
           <h3 id="more">More CSS</h3>
           <p>Changing the color of the text made the webpage a little more colorful, but the white background still looks boring. Let's give the colors div a yellow background.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/css_background-color.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/css_background-color.jpg">
           <p>Now there's a lot more color. Maybe it's not prettier but there's a lot more color. Hopefully this provides some insight into the whole rectangles thing I mentioned at the beginning.</p>
           <p>Let's try another exercise to revisit images and introduce another property.</p>
           <ul>
@@ -132,7 +132,7 @@
           </ul>
           <a class="btn" data-toggle="collapse" href="#collapseExercise4">Click Here For Answer</a>
           <div class="collapse" id="collapseExercise4">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise4.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise4.jpg">
           </div>
           <p>If you used the image I provided earlier, then perhaps it's a little too big. So let's fix it.</p>
           <ul>
@@ -140,22 +140,23 @@
           </ul>
           <a class="btn" data-toggle="collapse" href="#collapseExercise5">Click Here For Answer</a>
           <div class="collapse" id="collapseExercise5">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise5_html.jpg">
-            <img class="img-fluid" src="./pictures/website_tutorial/exercise5_css.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise5_html.jpg">
+            <img class="img-fluid" src="./pictures/html_css_basics/exercise5_css.jpg">
           </div>
           <p>There are many ways to achieve this result. I chose to put an id in the image element, but an id in the div works too. A class (in the div or the image element) is another way to go.</p>
           <p>Putting a width of 50% means shrinking the image to half its original width. Putting a width over 100% enlarges it beyond its original width. Any positive percentage can be used. The same can be done for height.</p>
           <h3 id="links">Links</h3>
           <p>Not the link at the top of the file. That was for linking the html file with the css file. The links I'm referring to are the "&lt;a&gt;" elements at the bottom of the file.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/links.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/links.jpg">
           <p>Here are two anchor elements. Informally, I think of them as links. Both are to Bing :) but the first one opens in the same window and the second one opens in another window/tab. As you can probably tell, it's because of the "target="_blank", which means open in a new window/tab.</p>
           <p>Whatever goes between the opening tag and closing tag is going to be hyperlinked. This means that you could put in image element between the tags and that would make the image link to another website.</p>
           <p>Here is what that would look like.</p>
-          <img class="img-fluid" src="./pictures/website_tutorial/image_link.jpg">
+          <img class="img-fluid" src="./pictures/html_css_basics/image_link.jpg">
           <h3>Congratulations!</h3>
-          <p>If you made it this far, then thank you first of all. Second, you are now familiar with the components of websites. If you want to learn more, like on Codecademy, then I hope reading this first will make learning easier. That was my goal.</p>
-          <p>Your current index.html doesn't follow website/webpage/HTML standards. So it's kinda really not a website. It's like drawing a few lines on a paper and calling it art (or yourself an artist). Technically, it is and you are, but there's a lot more to drawing and being an artist than that. Arguably.</p>
-          <p>If you're interested, <a href="https://github.com/lam-alan/lam-alan.github.io" target="_blank">here</a> is the source code for this website. (The cover photo at the top is also a snippet.) You'll probably recognize a few things (hopefully). It might not conform to the standards either, but it is a little closer to being a website than what I have provided in this tutorial.</p>
+          <p>If you made it this far, then you are now familiar with the components of websites. If you want to learn more, like on Codecademy, then I hope reading this first will make learning easier. That was my goal.</p>
+          <p>Your current index.html doesn't follow website/webpage/HTML standards. So it's kinda really not a website. It's like drawing a few lines on a paper and calling it art (or yourself an artist). Technically, it is art and you are an artist (yay), but there's a lot more to drawing and being an artist than that. Arguably.</p>
+          <p>If you're interested, <a href="https://github.com/lam-alan/lam-alan.github.io" target="_blank">here</a> is the source code for this website. (The cover photo at the top is also a snippet.) You'll probably recognize a few things. It might not conform to the standards either, but it is a little closer to being a website than what I have provided in this tutorial.</p>
+          <p>Regardless, </p>
         </div>
       </div>
     </div>
