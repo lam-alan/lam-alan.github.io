@@ -84,6 +84,11 @@ body, html {
   margin-bottom: 7%;
 }
 
+#links {
+  background: #C04848;
+  background: -webkit-linear-gradient(to left, #480048, #C04848);
+  background: linear-gradient(to left, #480048, #C04848);
+}
 
 #links .col-sm-6 {
   border-bottom: 2px solid gray;
@@ -91,26 +96,6 @@ body, html {
 
 #links img {
   margin-top: 3%;
-}
-
-#mywebsite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #DC2424;
-  background: -webkit-linear-gradient(to left, #4A569D, #DC2424);
-  background: linear-gradient(to left, #4A569D, #DC2424);
-  height: 100%;
-}
-
-#mywebsite a {
-  color: white;
-}
-
-#links {
-  background: #C04848;
-  background: -webkit-linear-gradient(to left, #480048, #C04848);
-  background: linear-gradient(to left, #480048, #C04848);
 }
 
 #menu {
