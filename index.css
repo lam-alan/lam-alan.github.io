@@ -26,9 +26,11 @@ body, html {
 }
 
 #intro {
-  background: #0F2027;
+  /* background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+  background: -webkit-linear-gradient(90deg, rgb(11, 144, 128), rgb(54, 0, 68));
+  background: linear-gradient(90deg, rgb(11, 144, 128), rgb(54, 0, 68));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,9 +49,11 @@ body, html {
 }
 
 #about {
-  background: #373B44;
+  /* background: #373B44;
   background: -webkit-linear-gradient(to right, #4286f4, #373B44);
-  background: linear-gradient(to right, #4286f4, #373B44);
+  background: linear-gradient(to right, #4286f4, #373B44); */
+  background: -webkit-linear-gradient(90deg, rgb(11, 159, 159), rgb(54, 0, 85));
+  background: linear-gradient(90deg, rgb(11, 159, 159), rgb(54, 0, 85)); 
 }
 
 .col-sm-6, .col-sm-7 {
@@ -58,9 +62,11 @@ body, html {
 }
 
 #critique {
-  background: #355C7D;
+  /* background: #355C7D;
   background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 166), rgb(30, 2, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 166), rgb(30, 2, 67));
 }
 
 .btn:focus, .btn:active {
@@ -73,9 +79,11 @@ body, html {
 }
 
 #tutorials {
-  background: #1D4350;
+  /* background: #1D4350;
   background: -webkit-linear-gradient(to right, #A43931, #1D4350);
-  background: linear-gradient(to right, #A43931, #1D4350);
+  background: linear-gradient(to right, #A43931, #1D4350); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 129), rgb(16, 2, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 129), rgb(16, 2, 67));
 }
 
 .tutorial-article {
@@ -83,9 +91,11 @@ body, html {
 }
 
 #links {
-  background: #C04848;
+  /* background: #C04848;
   background: -webkit-linear-gradient(to left, #480048, #C04848);
-  background: linear-gradient(to left, #480048, #C04848);
+  background: linear-gradient(to left, #480048, #C04848); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 86), rgb(2, 20, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 86), rgb(2, 20, 67));
 }
 
 #links .col-sm-6 {
