@@ -39,7 +39,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 }
 
 #home, #intro, #about, #critique, #tutorials, #links {
@@ -55,10 +55,6 @@ body, html {
 .col-sm-6, .col-sm-7 {
   text-align: justify;
   margin-left: 2%;
-}
-
-.link {
-  color: darkblue;
 }
 
 #critique {
@@ -104,6 +100,14 @@ body, html {
   margin-top: 3%;
 }
 
+#links_list {
+  margin-top: 5%;
+}
+
+#links_list li {
+  margin-bottom: 0;
+}
+
 #menu {
   position: fixed;
   z-index: 1;
@@ -116,12 +120,14 @@ li {
   margin-bottom: 15%;
 }
 
-a:hover {
-  color: white;
+.active, a:hover  {
+  background-color: black;
 }
 
-.active, #menu ul li a:hover  {
-  background-color: black;
+a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 .contentDiv {

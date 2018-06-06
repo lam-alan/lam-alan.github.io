@@ -18,10 +18,6 @@ body, html {
   text-align: justify;
 }
 
-a {
-  color: darkblue;
-}
-
 code {
   background-color: white;
 }
@@ -47,11 +43,13 @@ code {
   margin-bottom: 15%;
 }
 
-a:hover {
+a {
   color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
-#menu ul li a:hover  {
+a:hover {
   background-color: black;
 }
 
