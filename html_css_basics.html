@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <title>HTML & CSS Basics</title>
     <link href="html_css_basics.css" rel="stylesheet">
   </head>
@@ -49,7 +50,7 @@
           <h3>Rectangles, rectangles, rectangles</h3>
           <p>A webpage is just a big rectangle with smaller rectangles inside. And inside those smaller rectangles are words, images, videos, and many other things.</p>
           <img class="img-fluid" src="./pictures/html_css_basics/colored_rect.jpg">
-          <p>For example, these are some of the rectangles for this webpage.</p>
+          <p>For example, these are some of the rectangles for this webpage. An earlier version anyways.</p>
           <p>Rectangles, and the content inside (called elements), are created with code. In particular, HTML, which stands for Hypertext Markup Language.</p>
           <p>Before moving on, open your text/code editor, create a new file, and save the file as "index.html" (Without the quotes). I also recommend making a new folder on your desktop and moving the file there.</p>
           <h3 id="text">Text</h3>
@@ -57,13 +58,13 @@
           <img class="img-fluid" src="./pictures/html_css_basics/heading.jpg">
           <p>This is the syntax for creating a heading element. The "&lt;h1&gt;" is called an opening tag. The "&lt;/h1&gt;" is called a closing tag. The "h1" means it is a heading with the biggest size. The numbers range from 1-6 where 1 is the largest and 6 is the smallest. These numbers only apply for headings.</p>
           <p>Save the file, go to the place where it is saved on your computer, and open* it. You should see the words "This is a heading" at the top left.</p>
-          <p><strong>*From this point on, when I say open index.html - or if you want to see the changes you made -, I mean <i>refresh</i> the page if you haven't closed the page yet. Also, it is implied that you should <i>save</i> files after making changes to them.</strong></p>
+          <p>*From this point on, when I say open index.html - or if you want to see the changes you made -, I mean <i>refresh</i> the page if you haven't closed the page yet. Also, it is implied that you should <i>save</i> files after making changes to them.</p>
           <img class="img-fluid" src="./pictures/html_css_basics/paragraph.jpg">
           <p>Below the heading is the syntax for a paragraph element. The opening tag (&lt;p&gt;) is at the beginning and the closing tag (&lt;/p&gt;) is at the end. As you can guess, the "p" stands for paragraph. If you save your file and open it, you should see the paragraph element below the heading.</p>
           <h3 id="images">Images</h3>
           <img class="img-fluid" src="./pictures/html_css_basics/image.jpg">
           <p>This is the syntax for an image. The "src" is short for "source", which specifies where the image is located. If the image is online, then the src would be the link to that image. If the image is offline (on your computer), then the src would be the path on your computer to that image.</p>
-          <p><a href="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0" target="_blank">Here</a> is a sample image you can use to try. There are two ways to go about this. You can put <code>&lt;img src="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0"&gt;</code> The src is the link to the image because the image is online. On the other hand, if you download it and <strong>save it in the same folder as the index.html file</strong>, the code for the image would be <code>&lt;img src="panoramic-3049543_1920.jpg"&gt;</code> Here, the image is offline (on your computer) so the src is the path on your computer to the image. Since they are in the same folder, the path is just the name of the image file. If the image isn't in the same folder, then the path would probably be something like "C:\Users\Alan\Pictures\pic.jpg"</p>
+          <p><a href="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0" target="_blank">Here</a> is a sample image you can use to try. There are two ways to go about this. You can put <code>&lt;img src="https://dl.dropboxusercontent.com/s/9vsl4tbjonrdy7t/panoramic-3049543_1920.jpg?dl=0"&gt;</code> The src is the link to the image because the image is online. On the other hand, if you download it and save it in the same folder as the index.html file, the code for the image would be <code>&lt;img src="panoramic-3049543_1920.jpg"&gt;</code> Here, the image is offline (on your computer) so the src is the path on your computer to the image. Since they are in the same folder, the path is just the name of the image file. If the image isn't in the same folder, then the path would probably be something like "C:\Users\Alan\Pictures\pic.jpg"</p>
           <h3 id="divs">Divs</h3>
           <p>"Div" is short for "division". In this case, division means a part of the webpage that has been divided. These are the rectangles I mentioned earlier. One way of looking at this is like imagining the webpage as a big rectangle. Adding divs is like adding smaller rectangles inside the big rectangle.</p>
           <img class="img-fluid" src="./pictures/html_css_basics/div.jpg">
@@ -89,7 +90,7 @@
           <h3 id="css">CSS</h3>
           <p>At the end of the "Divs" section, I mentioned that putting elements in a div makes it easier to style related elements. The first step to achieving that is adding a class in a div. The second step is CSS.</p>
           <p>CSS stands for "Cascading Style Sheets". It is a <a href="https://www.quora.com/Is-CSS-or-HTML-a-programming-language" target="_blank">"programming"</a> language used to dictate how elements in a document should look. Color, backgrounds, size, and position are the main properties (for me anyways) that are determined using CSS.</p>
-          <p>At this point, open a brand new text file and save it as "index.css" (Without the quotes). <strong>And move it to the folder containing index.html.</strong></p>
+          <p>At this point, open a brand new text file and save it as "index.css" (Without the quotes). And move it to the folder containing index.html.</p>
           <img class="img-fluid" src="./pictures/html_css_basics/css.jpg">
           <p>This is the syntax for CSS. If you want to target a class, you put a period in front of the class name. Like in the html file, there's 2 spaces of indentation. Again, it's by convention. Whitespace doesn't actually have an effect on the result; it's there for readability. Also, the rules <i>must</i> end with a semicolon. </p>
           <p>By putting "color: purple", I'm specifying that elements with the class "colors" should be purple.</p>
