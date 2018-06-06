@@ -1,6 +1,8 @@
 body, html {
   margin: 0;
   background-color: black;
+  font-family: 'Slabo 27px', serif;
+  font-size: 105%;
 }
 
 .navbar {
@@ -13,6 +15,7 @@ body, html {
   background: linear-gradient(to right, #56B4D3, #348F50);
   color: white;
   margin: 0;
+  text-align: justify;
 }
 
 a {

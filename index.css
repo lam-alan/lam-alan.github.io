@@ -2,6 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   background-color: black;
+  font-family: 'Slabo 27px', serif;
+  font-size: 105%;
 }
 
 .navbar {
@@ -92,6 +94,10 @@ body, html {
 
 #links .col-sm-6 {
   border-bottom: 2px solid gray;
+}
+
+#learning {
+  border-top: 2px solid gray;
 }
 
 #links img {
