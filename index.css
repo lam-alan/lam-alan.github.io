@@ -10,6 +10,10 @@ body, html {
   background-color: #212529;
 }
 
+#home, #intro, #about, #critique, #tutorials, #links, #contact, #misc {
+  color: white;
+}
+
 .jumbotron {
   margin: 0;
 }
@@ -26,45 +30,43 @@ body, html {
 }
 
 #intro {
-  background: #0F2027;
+  /* background: #0F2027;
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); */
+  background: -webkit-linear-gradient(90deg, rgb(11, 144, 128), rgb(54, 0, 68));
+  background: linear-gradient(90deg, rgb(11, 144, 128), rgb(54, 0, 68));
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.intro-row, .mywebsite-row {
+.intro-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-#home, #intro, #about, #critique, #tutorials, #links {
-  color: white;
+  text-align: justify;
 }
 
 #about {
-  background: #373B44;
+  /* background: #373B44;
   background: -webkit-linear-gradient(to right, #4286f4, #373B44);
-  background: linear-gradient(to right, #4286f4, #373B44);
+  background: linear-gradient(to right, #4286f4, #373B44); */
+  background: -webkit-linear-gradient(90deg, rgb(11, 159, 159), rgb(54, 0, 85));
+  background: linear-gradient(90deg, rgb(11, 159, 159), rgb(54, 0, 85)); 
 }
 
-.col-sm-6, .col-sm-7 {
+.col-sm-4, .col-sm-6, .col-sm-7 {
   text-align: justify;
   margin-left: 2%;
 }
 
-.link {
-  color: darkblue;
-}
-
 #critique {
-  background: #355C7D;
+  /* background: #355C7D;
   background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
-  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 166), rgb(30, 2, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 166), rgb(30, 2, 67));
 }
 
 .btn:focus, .btn:active {
@@ -77,9 +79,11 @@ body, html {
 }
 
 #tutorials {
-  background: #1D4350;
+  /* background: #1D4350;
   background: -webkit-linear-gradient(to right, #A43931, #1D4350);
-  background: linear-gradient(to right, #A43931, #1D4350);
+  background: linear-gradient(to right, #A43931, #1D4350); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 129), rgb(16, 2, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 129), rgb(16, 2, 67));
 }
 
 .tutorial-article {
@@ -87,9 +91,11 @@ body, html {
 }
 
 #links {
-  background: #C04848;
+  /* background: #C04848;
   background: -webkit-linear-gradient(to left, #480048, #C04848);
-  background: linear-gradient(to left, #480048, #C04848);
+  background: linear-gradient(to left, #480048, #C04848); */
+  background: -webkit-linear-gradient(90deg, rgb(22, 189, 86), rgb(2, 20, 67));
+  background: linear-gradient(90deg, rgb(22, 189, 86), rgb(2, 20, 67));
 }
 
 #links .col-sm-6 {
@@ -104,6 +110,50 @@ body, html {
   margin-top: 3%;
 }
 
+#links_list {
+  margin-top: 5%;
+}
+
+#links_list li {
+  margin-bottom: 0;
+}
+
+#misc {
+  background: -webkit-linear-gradient(90deg, rgb(21, 183, 41), rgb(4, 24, 76));
+  background: linear-gradient(90deg, rgb(21, 183, 41), rgb(4, 24, 76));
+  height: 100%;
+}
+
+#misc-div, #contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+}
+
+#contact {
+  background: -webkit-linear-gradient(90deg, rgb(42, 172, 20), rgb(6, 35, 89));
+  background: linear-gradient(90deg, rgb(42, 172, 20), rgb(6, 35, 89));
+}
+
+#contact-div p {
+  margin-top: 4%;
+}
+
+#profile {
+  width: 15%;
+  border-radius: 100%;
+  border: 1px black solid;
+  display: block;
+  margin: 0 auto;
+}
+
+code {
+  color: black;
+  background-color: white;
+}
+
 #menu {
   position: fixed;
   z-index: 1;
@@ -116,12 +166,19 @@ li {
   margin-bottom: 15%;
 }
 
-a:hover {
-  color: white;
+.active, a:hover  {
+  background-color: black;
 }
 
-.active, #menu ul li a:hover  {
-  background-color: black;
+a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.link {
+  color: aqua;
+  text-decoration-color: aqua;
 }
 
 .contentDiv {
@@ -178,5 +235,8 @@ a:hover {
 @media screen and (min-width: 800px) {
   .navbar {
     visibility: hidden;
+  }
+  #contact {
+    height: 100%;
   }
 }
