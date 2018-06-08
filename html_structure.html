@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>HTML Structure</title>
+    <link href="html_structure.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#home">Top</a>
+          <a class="nav-link" href="#doctype">DOCTYPE</a>
+          <a class="nav-link" href="#html">html</a>
+          <a class="nav-link" href="#meta">meta</a>
+          <a class="nav-link" href="#title">title</a>
+          <a class="nav-link" href="#linking">Linking CSS</a>
+          <a class="nav-link" href="#body">body</a>
+          <a class="nav-link" href="#conclusion">Conclusion</a>
+        </div>
+      </div>
+    </nav>
+    <div id="menu">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#doctype">DOCTYPE</a></li>
+        <li><a href="#html">html</a></li>
+        <li><a href="#meta">meta</a></li>
+        <li><a href="#title">title</a></li>
+        <li><a href="#linking">Linking CSS</a></li>
+        <li><a href="#body">body</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1 id="#top">HTML Structure</h1>
+          <img class="img-fluid" src="./pictures/html_structure/cover_picture.jpg">
+          <p>For this tutorial, you'll need a text/code editor. A simple text editor like Notepad (Windows) or TextEdit (Mac) suffices. I'll be using Notepad for this tutorial.</p>
+          <p>You can either edit the index.html file from the previous tutorial, or make a new one. I'll be using a new file. There isn't going to be a lot of visual changes. Just one really.</p>
+          <p>This information isn't really interesting but it's necessary. It's one of those things.</p>
+          <p>HTML files have more than just a bunch of headings, paragraphs, and images. There's also additional things that don't really change anything visually, but they add structure to the document. In a way, it's like telling a web browser how to "read" the document and what to expect in it.</p>
+          <h3 id="doctype">DOCTYPE</h3>
+          <img class="img-fluid" src="./pictures/html_structure/doctype.jpg">
+          <p>This should be the first line of any HTML document. It tells the browser what type of document it is reading.</p>
+          <h3 id="html">html</h3>
+          <img class="img-fluid" src="./pictures/html_structure/html_tag.jpg">
+          <p>By adding the HTML tags, the browser will know that anything in between those tags is HTML code/content. <code>lang="en"</code> tells the browser that this document will be in English.</p>
+          <h3 id="head">head</h3>
+          <img class="img-fluid" src="./pictures/html_structure/head.jpg">
+          <p>The head tags contain metadata (information about the webpage itself).</p>
+          <h3 id="meta">meta</h3>
+          <img class="img-fluid" src="./pictures/html_structure/meta.jpg">
+          <p><a class="link" href="https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8" target="_blank">This Stack Overflow answer</a> explains what's going on in the meta tag much better than I can.</p>
+          <h3 id="title">title</h3>
+          <img class="img-fluid" src="./pictures/html_structure/title.jpg">
+          <p>A broswer's tab displays what's between the title tags. If I were to save this file and open it, I would see the word "Welcome" on the tab.</p>
+          <img class="img-fluid margin_bottom" src="./pictures/html_structure/title_example.jpg">
+          <h3 id="linking">Linking CSS</h3>
+          <p>If you remember from the previous tutorial, we had to link our html and css files so the style rules we put in the css file would show up on the page. Well that goes inside the head.</p>
+          <img class="img-fluid margin_bottom" src="./pictures/html_structure/linking.jpg">
+          <h3 id="body">body</h3>
+          <img class="img-fluid" src="./pictures/html_structure/body.jpg">
+          <p>The body is where you start putting the actual content of the website. Like the headings, paragraphs, and images. Like everything else you've seen, stuff inside the body tags are indented by 2 spaces. The cover photo at the top is an example.</p>
+          <h3 id="conclusion">Conclusion</h3>
+          <p>For the structure, it always goes: DOCTYPE, html, head, body. The order of the things <i>inside</i> those tags doesn't matter. For example, you could put the title before the meta.</p>
+          <p>Yeah this stuff isn't very exciting. To me, knowing the actual elements (like the stuff in the previous tutorial) is more important.</p>
+          <p>Whenever I make a new html file, I just copy and paste all the head stuff I have in my other html files and change a few things (like the title) accordingly.</p>
+          <p>And as you've seen from the previous tutorial, the content still shows up on the page even without all this structure. This structure is required to prevent any potential errors though.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <p>Alan Lam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
