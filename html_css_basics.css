@@ -11,8 +11,8 @@ body, html {
 
 .jumbotron {
   background: #348F50;
-  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
-  background: linear-gradient(to right, #56B4D3, #348F50);
+  background: -webkit-linear-gradient(to left, #56B4D3, #348F50);
+  background: linear-gradient(to left, #56B4D3, #348F50);
   color: white;
   margin: 0;
   text-align: justify;
@@ -43,10 +43,16 @@ code {
   margin-bottom: 15%;
 }
 
-a {
+#menu a {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
+}
+
+.link {
+  color: aqua;
+  text-decoration: underline;
+  text-decoration-color: aqua;
 }
 
 a:hover {
