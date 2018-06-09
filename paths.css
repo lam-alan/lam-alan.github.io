@@ -8,11 +8,11 @@ body, html {
 .navbar {
   background-color: #212529;
 }
-
+  
 .jumbotron {
-  background: #348F50;
-  background: -webkit-linear-gradient(to left, #56B4D3, #348F50);
-  background: linear-gradient(to left, #56B4D3, #348F50);
+  background: #1f4037;
+  background: -webkit-linear-gradient(to left, #99f2c8, #1f4037);
+  background: linear-gradient(to left, #99f2c8, #1f4037);
   color: white;
   margin: 0;
   text-align: justify;
@@ -22,47 +22,34 @@ code {
   background-color: white;
 }
 
-.collapse {
-  margin-bottom: 5%;
-}
-
-.btn {
-  color: aqua;
-}
-
-.btn:focus, .btn:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
 #menu {
   position: fixed;
   z-index: 1;
   right: 10%;
   top: 30%;
 }
-
+    
 #menu li {
   list-style-type: none;
   margin-bottom: 15%;
 }
-
+    
 #menu a {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
 }
-
+    
 .link {
   color: aqua;
   text-decoration: underline;
   text-decoration-color: aqua;
 }
-
+  
 a:hover {
   background-color: black;
 }
-
+   
 @media screen and (max-width: 800px) {
   #menu {
     visibility: hidden;
@@ -71,7 +58,7 @@ a:hover {
     padding-top: 50px;
   }
 }
-
+    
 @media screen and (min-width: 800px) {
   .navbar {
     visibility: hidden;

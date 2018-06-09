@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>Relative And Absolute Paths</title>
+    <link href="paths.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1 id="top">Relative And Absolute Paths Explained</h1>
+          <img class="img-fluid" src="./pictures/paths/cover_picture.jpg">
+          <p>Imagine you're standing in your room. If you wanted to get something in your room, like your sweater, you would know where it is. You don't need to retrace the route through your house to look for it. Likewise, if you wanted to go to another room, you would know exactly how to get there without having to start at the front door.</p>
+          <p>Now imagine you're not at home. But someone else who isn't familiar with your house is. (For the sake of this example, let's assume this person is someone you trust to be in your house without you.) You tell them* that you want them to get your sweater, which you left on your chair. When they open the front door, where do they turn? Which doorway or hallway do they go through? Which room do they enter? If you have a roommate, which chair is yours? These are details you have to lay out specifically so that the person can understand where to go in your house.</p>
+          <p>*I used to not be a fan of the singular they/them, but I guess it's becoming more accepted, if it isn't already. And we do use it all the time when we're speaking anyways.</p>
+          <p>The first example is the idea of a relative path. It is directions to a specific item or location "relative" to where you are.</p>
+          <p>The second example is the idea of an absolute path. Absolute because ... well I'm not really sure. I guess you could say that by giving the path, you are "absolutely" sure that whatever you are looking for will be there, <i>regardless of where you are located.</i></p>
+          <p>You're not likely to use absolute paths, but it is good to know.</p>
+          <p>How does all this relate to HTML?</p>
+          <p>Image elements require a <code>src</code> and HTML/CSS linking requires a <code>href</code>. Both are locations to where a specific file is located.</p>
+          <img class="img-fluid" src="./pictures/paths/my_directory.jpg">
+          <p>This is what my folder for this website looks like at the moment I'm writing this tutorial. This webpage is "paths.html" so let's pretend you're that file.</p>
+          <p>You want to know what CSS rules to look at. Where you're standing, you see 4 css files. How do you know which one to use? Well, they're in the same room as you, so you can just call the one you're looking for by name. Therefore, the code to link the CSS file would be <code>&lt;link href="paths.css" rel="stylesheet"&gt;</code>. "From where I'm standing, look for a file called 'paths.css'."</p>
+          <p>Let's say you want to add an image. Well, there aren't any images in the current room you're in. It looks like they're in "pictures". So far, the code for an image element would be <code>&lt;img src="pictures"&gt;</code>.</p>
+          <img class="img-fluid" src="./pictures/paths/my_directory_2.jpg">
+          <p>Now we're in a different room. Namely, "pictures". If you wanted to use one of the pictures you see right now, the code would be <code>&lt;img src="pictures/up_arrow.png"&gt;</code>. "From where I'm currently standing, go to "pictures", then there should be a file called 'up_arrow.png'."</p>
+          <p>You are paths.html, so logically, the picture you want is in "paths".</p>
+          <img class="img-fluid" src="./pictures/paths/my_directory_3.jpg">
+          <p>You want to provide a picture of what my folder looks like so the code would be <code>&lt;img src="pictures/paths/my_directory.jpg&gt;</code>. "From where I'm currently standing, go to pictures, then go to paths, then look for the file named 'my_directory.jpg."</p>
+          <p>If you wanted to use an absolute path for some reason, then click on the bar to get the path.</p>
+          <img class="img-fluid" src="./pictures/paths/absolute_path.jpg">
+          <p>Then the src for an image element using an absolute path would be <code>&lt;img src="C:\Users\Alan\Desktop\webdevforbeginners.github.io\pictures\paths"&gt;</code>. You could give these directions to anyone on the computer no matter where they are on it and they would be able to find the file you asked for.</p>
+          <p>For the first tutorial, I instructed you to make a folder on your desktop and put all your files (index.html, index.css, images) in that folder. Besides making it easy to manage your files, it also makes it easy to provide paths to things when making images or linking CSS files.</p>
+          <p>I hope that when I said, "Since index.css and index.html are in the same folder, the location is the name of the file." or "Since they are in the same folder, the path is just the name of the image file.", it makes more sense now.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <p>Alan Lam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
