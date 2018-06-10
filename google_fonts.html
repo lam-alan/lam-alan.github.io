@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <title>How To Use Google Fonts</title>
+    <link href="google_fonts.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#top">Top</a>
+          <a class="nav-link" href="#font_family">Font Family</a>
+          <a class="nav-link" href="#google_font">Google Fonts</a>
+          <a class="nav-link" href="#font_size">Font Size</a>
+        </div>
+      </div>
+    </nav>
+    <div id="menu">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#font_family">Font Family</a></li>
+        <li><a href="#google_font">Google Fonts</a></li>
+        <li><a href="#font_size">Font Size</a></li>
+      </ul>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-7">
+          <h1 id="top">How To Use Google Fonts (And Change Fonts In General)</h1>
+          <img id="cover" class="img-fluid" src="./pictures/google_fonts/google_fonts_result.jpg">
+          <img class="img-fluid" src="./pictures/google_fonts/starter_code.jpg">
+          <p>Let's start with a sample file. If you've done the previous tutorials, then this should be familiar.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/starter_code_result.jpg">
+          <p>Here's what that looks like. What if we want to change the font?</p>
+          <h3 id="font_family">Font Family</h3>
+          <img class="img-fluid" src="./pictures/google_fonts/font-family.jpg">
+          <p>And here's the CSS rule to do that.</p>
+          <p>This is another way to target elements in HTML. This is targeting <i>all</i> paragraph elements.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/starter_code_font-family.jpg">
+          <p>Notice how all paragraph elements are now in Helvetica even though they were in different divs.</p>
+          <p>In "HTML & CSS Basics" I went over targeting elements by class and id. To do that, we needed to put "." in front of the class name and "#" in front of the id name. Notice how there's no symbol in front of the p. This is targeting an element by it's tag name. Other HTML elements, like <code>&lt;h3&gt;</code> and <code>&lt;img&gt;</code>, can be targeted by tag as well since they are created with tags.</p>
+          <p>Helvetica is a web safe font. This means all operating systems have it installed and will be able to display the text in that font. <a class="link" href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Here</a> is a list of some web safe fonts. However, there are options to use custom fonts, and that's what Google Fonts is for.</p>
+          <h3 id="google_font">Google Fonts</h3>
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_home.jpg">
+          <p>This is the home page for <a class="link" href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a>. If you click on the "+" circled in red for any font, you should get something like what is shown below. (I unchecked "Sans Serif" and scrolled a little bit down to get to that font.)</p>
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_add.jpg">
+          <p>Clicking on the black bar circled in red should bring you to what is shown below.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_select.jpg">
+          <p>The link goes in the html file and the font-family rule goes in the css file. What that looks like is shown below.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_html.jpg">
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_css.jpg">
+          <p>If you noticed, earlier I used double quotes around Helvetica. Single quotes work too.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/google_fonts_result.jpg">
+          <h3 id="font_size">Font Size</h3>
+          <p>And if you want to change the font size, the rule is <code>font-size</code>. Increasing the percentage makes the font bigger and decreasing the percentage makes the font smaller.</p>
+          <img class="img-fluid" src="./pictures/google_fonts/font-size.jpg">
+          <p>(The sentences in this example are <a class="link" href="https://en.wikipedia.org/wiki/Pangram" target="_blank">pangrams</a>, which are good for looking at how fonts apply to each letter. In case you were wondering about the choice of words.)</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <p>Alan Lam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
