@@ -60,6 +60,10 @@ body, html {
   background: linear-gradient(90deg, rgb(22, 189, 166), rgb(30, 2, 67));
 }
 
+.critique-article {
+  margin-bottom: 5%;
+}
+
 .btn:focus, .btn:active {
   outline: none !important;
   box-shadow: none !important;
