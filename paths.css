@@ -27,3 +27,7 @@ code {
 a:hover {
   background-color: black;
 }
+
+.footer {
+  color: gray;
+}

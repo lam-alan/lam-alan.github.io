@@ -53,6 +53,10 @@ code {
 a:hover {
   background-color: black;
 }
+
+.footer {
+  color: gray;
+}
   
 @media screen and (max-width: 800px) {
   #menu {
