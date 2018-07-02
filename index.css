@@ -205,7 +205,7 @@ a {
 }
 
 .footer {
-  background-color: black;
+  color: gray;
 }
 
 @media screen and (max-width: 800px) {
