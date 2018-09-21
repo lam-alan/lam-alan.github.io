@@ -21,3 +21,17 @@ $('.hidden').removeClass('hidden').hide();
 $('.toggle-text').click(function() {
   $(this).find('span').each(function() { $(this).toggle(); });
 });
+
+function success() {
+  if (document.getElementById('message').value === "") {
+    document.getElementById('submit').disabled = true;
+  }
+  else {
+    document.getElementById('submit').disabled = false;
+  }
+}
+
+$('#gform').on('submit', function(e) {
+  $('#gform')[0].reset();
+  $('#after-submit').show();
+});

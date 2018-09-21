@@ -50,6 +50,14 @@ body, html {
   background: linear-gradient(90deg, rgb(11, 159, 159), rgb(54, 0, 85)); 
 }
 
+#profile {
+  width: 200px;
+  border-radius: 100%;
+  border: 1px black solid;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+
 .col-sm-4, .col-sm-6, .col-sm-7 {
   text-align: justify;
   margin-left: 2%;
@@ -111,6 +119,7 @@ body, html {
 
 #misc-div, #contact-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -122,21 +131,27 @@ body, html {
   background: linear-gradient(90deg, rgb(42, 172, 20), rgb(6, 35, 89));
 }
 
-#contact-div p {
-  margin-top: 4%;
+.contact-form-info {
+  margin-bottom: 10px;
 }
 
-#profile {
-  width: 200px;
-  border-radius: 100%;
-  border: 1px black solid;
-  display: block;
-  margin: 0 auto;
+.col-6 input {
+  width: 100%;
 }
 
-code {
-  color: black;
-  background-color: white;
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+#submit {
+  width: 30%;
+  float: left;
+}
+
+#after-submit {
+  display: none;
 }
 
 #menu {
@@ -171,15 +186,21 @@ a {
 }
 
 @keyframes bouncing-down {
-  0% {bottom: 0;}
-  50% {bottom: 20px;}
-  100% {bottom: 0;}
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
 }
 
 @keyframes bouncing-up {
-  0% {top: 0;}
-  50% {top: 20px;}
-  100% {top: 0;}
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
 }
 
 .down_arrow {
@@ -208,7 +229,7 @@ a {
   color: gray;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   #menu {
     visibility: hidden;
   }
@@ -217,7 +238,7 @@ a {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .navbar {
     visibility: hidden;
   }

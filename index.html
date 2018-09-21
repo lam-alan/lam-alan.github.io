@@ -76,6 +76,7 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="about-text">
+            <img id="profile" class="img-fluid" src="./pictures/self.jpg">
             <p>I'm Alan Lam and I'm a self-taught website maker.</p>
             <p>With only 5 months of experience and informal instruction, I wouldn't call myself a web developer. To me, web developer makes it sound like I'm an expert.</p>
             <p>So although I'm no expert, I do have a basic understanding of the language and components of a website. I did make this website after all. It may not be fancy and flashy - nor may it follow traditional web development standards - but it works.</p>
@@ -263,11 +264,21 @@
         </div>
       </div>
       <div id="contact-div">
-        <div>
-          <img id="profile" class="img-fluid" src="./pictures/self.jpg">
-          <p>My email is <code>alanlam00@gmail.com</code>. I'm open to comments, questions, suggestions, or anything else.</p>
-          <p>I'll add an actual contact section sometime in the near future.</p>
-        </div>
+        <script type="text/javascript">var submitted=false;</script>
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeNLpbGStiB4xJLrwQ2HKcmqGU4wBH9A86SMIrw3BXPoxv0hA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+          <div class="row contact-form-info">
+            <div class="col-6">
+              <input type="text" name="entry.2103717419" placeholder="Name">
+            </div>
+            <div class="col-6">
+              <input type="text" name="entry.1035938234" placeholder="Email">
+            </div>
+          </div>
+          <textarea name="entry.975062309" id="message" placeholder="Your message! (Required to submit)" onkeyup="success()"></textarea>
+          <input type="submit" id="submit" value="Submit" disabled>
+          <p id="after-submit">Thanks! Your message has been sent!</p>
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       </div>
     </div>
     <div class="footer">
