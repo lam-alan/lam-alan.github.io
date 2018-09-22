@@ -23,15 +23,10 @@ $('.toggle-text').click(function() {
 });
 
 function success() {
-  if (document.getElementById('message').value === "") {
+  if (document.getElementsByTagName('textarea')[0].value === "") {
     document.getElementById('submit').disabled = true;
   }
   else {
     document.getElementById('submit').disabled = false;
   }
 }
-
-$('#gform').on('submit', function(e) {
-  $('#gform')[0].reset();
-  $('#after-submit').show();
-});
