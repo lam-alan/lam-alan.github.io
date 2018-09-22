@@ -264,21 +264,12 @@
         </div>
       </div>
       <div id="contact-div">
-        <script type="text/javascript">var submitted=false;</script>
-        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeNLpbGStiB4xJLrwQ2HKcmqGU4wBH9A86SMIrw3BXPoxv0hA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-          <div class="row contact-form-info">
-            <div class="col-6">
-              <input type="text" name="entry.2103717419" placeholder="Name">
-            </div>
-            <div class="col-6">
-              <input type="text" name="entry.1035938234" placeholder="Email">
-            </div>
-          </div>
-          <textarea name="entry.975062309" id="message" placeholder="Your message! (Required to submit)" onkeyup="success()"></textarea>
-          <input type="submit" id="submit" value="Submit" disabled>
-          <p id="after-submit">Thanks! Your message has been sent!</p>
+        <form name="contact" method="POST" netlify>
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Enter your message!" onkeyup="success()"></textarea>
+          <button type="submit" id="submit" disabled>Send</button>
         </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       </div>
     </div>
     <div class="footer">
