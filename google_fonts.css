@@ -6,7 +6,7 @@ body, html {
 }
 
 #back {
-  position: fixed;
+  position: absolute;
   top: 30px;
   left: 50px;
 }
