@@ -10,7 +10,7 @@ body, html {
   background-color: #212529;
 }
 
-#home, #intro, #about, #critique, #tutorials, #links, #contact, #misc {
+#home, #intro, #about, #critique, #tutorials, #links {
   color: white;
 }
 
@@ -109,44 +109,6 @@ body, html {
 
 .links_list li {
   margin-bottom: 0;
-}
-
-#misc {
-  background: -webkit-linear-gradient(90deg, rgb(21, 183, 41), rgb(4, 24, 76));
-  background: linear-gradient(90deg, rgb(21, 183, 41), rgb(4, 24, 76));
-  height: 100%;
-}
-
-#misc-div, #contact-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 80%;
-}
-
-#contact {
-  background: -webkit-linear-gradient(90deg, rgb(42, 172, 20), rgb(6, 35, 89));
-  background: linear-gradient(90deg, rgb(42, 172, 20), rgb(6, 35, 89));
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-input {
-  margin-bottom: 20px;
-}
-
-textarea {
-  resize: none;
-  height: 200px;
-  width: 300px;
-  margin-bottom: 20px;
 }
 
 #menu {
